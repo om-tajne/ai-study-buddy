@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Session</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .chat-container { height: 70vh; overflow-y: auto; border: 1px solid #ddd; padding: 20px; border-radius: 10px; background: #fdfdfd; }
+        .bubble-user { background: #007bff; color: white; padding: 10px; border-radius: 15px; margin-bottom: 10px; align-self: flex-end; }
+        .bubble-ai { background: #e9ecef; color: #333; padding: 10px; border-radius: 15px; margin-bottom: 10px; }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>📖 Studying Lecture</h3>
+            <a href="index.html" class="btn btn-outline-secondary btn-sm">Upload New</a>
+        </div>
+        <div id="chatWindow" class="chat-container d-flex flex-column mb-3">
+            <div class="bubble-ai">Hello! I've analyzed your lecture. What would you like to know?</div>
+        </div>
+        <div class="input-group">
+            <input type="text" id="questionInput" class="form-control" placeholder="Ask about the lecture...">
+            <button class="btn btn-success" onclick="askQuestion()">Ask AI</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+# --- SENSITIVE DATA (CRITICAL) ---
+# Never push your API keys or DB passwords to GitHub
+.env
+*.env
+
+# --- NODE.JS ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# --- PYTHON ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+ENV/
+build/
+dist/
+
+# --- PROJECT SPECIFIC ---
+# Ignore the actual uploaded audio files to keep repo light
+uploads/
+*.mp3
+*.wav
+*.m4a
+
+# --- SYSTEM / IDE ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
